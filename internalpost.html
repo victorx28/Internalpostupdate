@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+    <title>Blog-28s</title>
+  </head>
+  <body>
+        <header class="header">
+                <div class="top">
+                    <div class="top__socialIcons">
+                        <div class="top__socialIcons--alignment">
+                            <a href="#" class="top__socialLink"><i data-feather="facebook"></i></a>
+                            <a href="#" class="top__socialLink"><i data-feather="twitter"></i></a>
+                            <a href="#" class="top__socialLink"><i data-feather="instagram"></i></a>
+                            <a href="#" class="top__socialLink"><i data-feather="youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+                <div class="secondaryTop">
+                    <div class="secondaryTop__row">
+                        <a class="secondaryTop__link" href="#">
+                        <img class="secondaryTop__logo" src="image/logo2.png">
+                        </a>
+                    </div>
+                </div>
+        </header>
+        <div class="sticky__MenuandSearch">
+            <div class="content__MenuandSearch">
+                <div class="overlay__search">
+                    <form class="search-form">
+                        <div class="search-form-content">
+                            <div class="search-field">
+                                <label style="width: 100%;">
+                                    <span class="screen-reader-text">Buscar resultados para:</span>
+                                    <input type="search" name="s" class="s" placeholder="Pesquisar..." required aria-required="true">
+                                </label>
+                            </div>
+                            <div class="search-button">
+                                <button class="search-submit" aria-label="Pesquisar" onclick="searchForm.open();navDown.down();">
+                                    <i data-feather="search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="search-spacer" width="22px"></div>
+                    <button class="close__search search--hover" aria-label="Close Search" onclick="searchForm.close();navDown.up();">
+                        <i data-feather="x"></i>
+                    </button>
+                </div>
+                <nav class="secondaryTop__mainMenu">
+                    <ul class="navigationList">
+                        <li><a class="secondaryTop__navigationList secondaryTop__navigationList--active" href="#">Home</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">Dietas</a>
+                            <div class="dropdown-content">
+                                <a class="dropdown-item" href="#">Dieta A</a>
+                                <a class="dropdown-item" href="#">Dieta B</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">Exercícios</a>
+                            <div class="dropdown-content">
+                                <a class="dropdown-item" href="#">Supino Frontal</a>
+                                <a class="dropdown-item" href="#">Supino Costas</a>
+                                <a class="dropdown-item" href="#">Core/Abdômen</a>
+                                <a class="dropdown-item" href="#">Pernas</a>
+                                <a class="dropdown-item" href="#">Corrida</a>
+                                <a class="dropdown-item" href="#">Crosfit</a>
+                                <a class="dropdown-item" href="#">Outro</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">Cardápios</a>
+                            <div class="dropdown-content">
+                                <a class="dropdown-item" href="#">Cardápios com Peixes</a>
+                                <a class="dropdown-item" href="#">Cardápios com Frango</a>
+                                <a class="dropdown-item" href="#">Cardápios com Carne</a>
+                                <a class="dropdown-item" href="#">Cardápios Veganos</a>
+                                <a class="dropdown-item" href="#">Cardápios Vegetarianos</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">Dicas</a>
+                            <div class="dropdown-content">
+                                <a class="dropdown-item" href="#">Beber mais água durante o dia</a>
+                                <a class="dropdown-item" href="#">Como perder a Barriga mais rápido</a>
+                                <a class="dropdown-item" href="#">A importância do acompanhamento nutricional</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">Receitas</a>
+                            <div class="dropdown-content">
+                                <a class="dropdown-item" href="#">Café da Manhã</a>
+                                <a class="dropdown-item" href="#">Lanche Matutino</a>
+                                <a class="dropdown-item" href="#">Almoço</a>
+                                <a class="dropdown-item" href="#">Lanche da Tarde</a>
+                                <a class="dropdown-item" href="#">Jantar</a>
+                                <a class="dropdown-item" href="#">Lanche Noturno</a>
+                                <a class="dropdown-item" href="#">Ceia</a>
+                                <a class="dropdown-item" href="#">Lanche para Viagens</a>
+                                <a class="dropdown-item" href="#">Sucos Antioxidantes</a>
+                                <a class="dropdown-item" href="#">Saladas Rápidas</a>
+                            </div>
+                        </li>
+                        <li><a href="#">Contato</a></li>
+                        <li>
+                            <button class="search__open search--hover" onclick="searchForm.open()">
+                                <i data-feather="search"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+<main>
+    
+    <section class="up">
+        <h1 class="uptitle">
+            <p>Café-da-manhã</p>
+        </section>
+
+        <section class="item">
+
+        <article class="item1">
+            <div class="itemarea">
+                <div class="iteminfo">
+                    <p> Cokkies fit com 2 ingredientes</p>
+                </div>
+                
+                <a href="#"><img src="https://via.placeholder.com/217x325"></a>
+            
+            </div>
+                <h2 class="itemname">
+                    <a class="itemlink" href="#"> Cookie fit com dois ingredientes</a></h2>
+                    <address>Por <a class="namelink" href="#">Lorem Ipsum</a></address>
+                            <time pubdate>10/07/2022</time><br>
+
+                <h2 class="lermais">   
+                    <a class="lermaislink" href="#"> Ler mais></a></h2>
+
+        </article>
+        
+        <article class="item1">
+            <div class="itemarea">
+                <div class="iteminfo">
+                    <p> Cokkies fit com 2 ingredientes</p>
+                </div>
+                
+                <a href="#"><img src="https://via.placeholder.com/217x325"></a>
+            
+            </div>
+                <h2 class="itemname">
+                    <a class="itemlink" href="#"> Cookie fit com dois ingredientes</a></h2>
+                    <address>Por <a class="namelink" href="#">Lorem Ipsum</a></address>
+                            <time pubdate>10/07/2022</time><br>
+
+                <h2 class="lermais">   
+                    <a class="lermaislink" href="#"> Ler mais></a></h2>
+
+        </article>
+
+        <article class="item1">
+            <div class="itemarea">
+                <div class="iteminfo">
+                    <p> Cokkies fit com 2 ingredientes</p>
+                </div>
+                
+                <a href="#"><img src="https://via.placeholder.com/217x325"></a>
+            
+            </div>
+                <h2 class="itemname">
+                    <a class="itemlink" href="#"> Cookie fit com dois ingredientes</a></h2>
+                    <address>Por <a class="namelink" href="#">Lorem Ipsum</a></address>
+                            <time pubdate>10/07/2022</time><br>
+
+                <h2 class="lermais">   
+                    <a class="lermaislink" href="#"> Ler mais></a></h2>
+
+        </article>
+
+        <article class="item1">
+            <div class="itemarea">
+                <div class="iteminfo">
+                    <p> Cokkies fit com 2 ingredientes</p>
+                </div>
+                
+                <a href="#"><img src="https://via.placeholder.com/217x325"></a>
+            
+            </div>
+                <h2 class="itemname">
+                    <a class="itemlink" href="#"> Cookie fit com dois ingredientes</a></h2>
+                    <address>Por <a class="namelink" href="#">Lorem Ipsum</a></address>
+                            <time pubdate>10/07/2022</time><br>
+
+                <h2 class="lermais">   
+                    <a class="lermaislink" href="#"> Ler mais></a></h2>
+
+        </article>
+
+        <article class="item1">
+            <div class="itemarea">
+                <div class="iteminfo">
+                    <p> Cokkies fit com 2 ingredientes</p>
+                </div>
+                
+                <a href="#"><img src="https://via.placeholder.com/217x325"></a>
+            
+            </div>
+                <h2 class="itemname">
+                    <a class="itemlink" href="#"> Cookie fit com dois ingredientes</a></h2>
+                    <address>Por <a class="namelink" href="#">Lorem Ipsum</a></address>
+                            <time pubdate>10/07/2022</time><br>
+
+                <h2 class="lermais">   
+                    <a class="lermaislink" href="#"> Ler mais></a></h2>
+
+        </article>
+
+        <article class="item1">
+            <div class="itemarea">
+                <div class="iteminfo">
+                    <p> Cokkies fit com 2 ingredientes</p>
+                </div>
+                
+                <a href="#"><img src="https://via.placeholder.com/217x325"></a>
+            
+            </div>
+                <h2 class="itemname">
+                    <a class="itemlink" href="#"> Cookie fit com dois ingredientes</a></h2>
+                    <address>Por <a class="namelink" href="#">Lorem Ipsum</a></address>
+                            <time pubdate>10/07/2022</time><br>
+
+                <h2 class="lermais">   
+                    <a class="lermaislink" href="#"> Ler mais></a></h2>
+
+        </article>
+
+        <article class="item1">
+            <div class="itemarea">
+                <div class="iteminfo">
+                    <p> Cokkies fit com 2 ingredientes</p>
+                </div>
+                
+                <a href="#"><img src="https://via.placeholder.com/217x325"></a>
+            
+            </div>
+                <h2 class="itemname">
+                    <a class="itemlink" href="#"> Cookie fit com dois ingredientes</a></h2>
+                    <address>Por <a class="namelink" href="#">Lorem Ipsum</a></address>
+                            <time pubdate>10/07/2022</time><br>
+
+                <h2 class="lermais">   
+                    <a class="lermaislink" href="#"> Ler mais></a></h2>
+
+        </article>
+
+        <article class="item1">
+            <div class="itemarea">
+                <div class="iteminfo">
+                    <p> Cokkies fit com 2 ingredientes</p>
+                </div>
+                
+                <a href="#"><img src="https://via.placeholder.com/217x325"></a>
+            
+            </div>
+                <h2 class="itemname">
+                    <a class="itemlink" href="#"> Cookie fit com dois ingredientes</a></h2>
+                    <address>Por <a class="namelink" href="#">Lorem Ipsum</a></address>
+                            <time pubdate>10/07/2022</time><br>
+
+                <h2 class="lermais">   
+                    <a class="lermaislink" href="#"> Ler mais></a></h2>
+
+        </article>
+
+        <article class="item1">
+            <div class="itemarea">
+                <div class="iteminfo">
+                    <p> Cokkies fit com 2 ingredientes</p>
+                </div>
+                
+                <a href="#"><img src="https://via.placeholder.com/217x325"></a>
+            
+            </div>
+                <h2 class="itemname">
+                    <a class="itemlink" href="#"> Cookie fit com dois ingredientes</a></h2>
+                    <address>Por <a class="namelink" href="#">Lorem Ipsum</a></address>
+                            <time pubdate>10/07/2022</time><br>
+
+                <h2 class="lermais">   
+                    <a class="lermaislink" href="#"> Ler mais></a></h2>
+
+        </article>
+
+        <article class="item1">
+            <div class="itemarea">
+                <div class="iteminfo">
+                    <p> Cokkies fit com 2 ingredientes</p>
+                </div>
+                
+                <a href="#"><img src="https://via.placeholder.com/217x325"></a>
+            
+            </div>
+                <h2 class="itemname">
+                    <a class="itemlink" href="#"> Cookie fit com dois ingredientes</a></h2>
+                    <address>Por <a class="namelink" href="#">Lorem Ipsum</a></address>
+                            <time pubdate>10/07/2022</time><br>
+
+                <h2 class="lermais">   
+                    <a class="lermaislink" href="#"> Ler mais></a></h2>
+
+        </article>
+
+        <article class="item1">
+            <div class="itemarea">
+                <div class="iteminfo">
+                    <p> Cokkies fit com 2 ingredientes</p>
+                </div>
+                
+                <a href="#"><img src="https://via.placeholder.com/217x325"></a>
+            
+            </div>
+                <h2 class="itemname">
+                    <a class="itemlink" href="#"> Cookie fit com dois ingredientes</a></h2>
+                    <address>Por <a class="namelink" href="#">Lorem Ipsum</a></address>
+                            <time pubdate>10/07/2022</time><br>
+
+                <h2 class="lermais">   
+                    <a class="lermaislink" href="#"> Ler mais></a></h2>
+
+        </article>
+
+        <article class="item1">
+            <div class="itemarea">
+                <div class="iteminfo">
+                    <p> Cokkies fit com 2 ingredientes</p>
+                </div>
+                
+                <a href="#"><img src="https://via.placeholder.com/217x325"></a>
+            
+            </div>
+                <h2 class="itemname">
+                    <a class="itemlink" href="#"> Cookie fit com dois ingredientes</a></h2>
+                    <address>Por <a class="namelink" href="#">Lorem Ipsum</a></address>
+                            <time pubdate>10/07/2022</time><br>
+
+                <h2 class="lermais">   
+                    <a class="lermaislink" href="#"> Ler mais></a></h2>
+
+        </article>
+
+     
